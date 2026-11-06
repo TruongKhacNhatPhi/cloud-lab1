@@ -1,0 +1,157 @@
+/* ===== Biến màu ===== */
+:root {
+  --primary: #2563eb;
+  --primary-dark: #1e3a8a;
+  --text: #1f2937;
+  --muted: #6b7280;
+  --bg: #ffffff;
+  --bg-alt: #f0f7ff;
+  --border: #e5e7eb;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.6;
+}
+
+img { max-width: 100%; height: auto; display: block; }
+a { color: var(--primary); }
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* ===== Header & menu ===== */
+.site-header {
+  background: var(--primary-dark);
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.header-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.brand {
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.site-nav a {
+  color: #dbeafe;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.site-nav a:hover,
+.site-nav a:focus {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* ===== Hero ===== */
+.hero {
+  background: linear-gradient(180deg, #dbeafe 0%, var(--bg) 100%);
+  padding: 40px 0;
+}
+
+.hero-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 24px;
+}
+
+.hero-img {
+  width: 180px;
+  flex-shrink: 0;
+}
+
+.hero h1 {
+  margin: 0 0 8px;
+  color: var(--primary-dark);
+  font-size: 2rem;
+}
+
+.student-info { margin: 4px 0; font-weight: 600; }
+.course { margin: 4px 0; color: var(--muted); }
+
+/* ===== Section ===== */
+.section { padding: 40px 0; }
+.section-alt { background: var(--bg-alt); }
+
+.section h2 {
+  color: var(--primary-dark);
+  border-bottom: 3px solid var(--primary);
+  display: inline-block;
+  padding-bottom: 4px;
+  margin-top: 0;
+}
+
+/* ===== Cards ===== */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(440px, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.card {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.card h3 { margin-top: 0; color: var(--primary); }
+.example { color: var(--muted); margin-bottom: 0; }
+
+/* ===== Deployment ===== */
+.info-list { padding-left: 20px; }
+.info-list li { margin-bottom: 8px; }
+
+/* ===== Footer ===== */
+.site-footer {
+  background: var(--primary-dark);
+  color: #dbeafe;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.site-footer p { margin: 0; }
+
+/* ===== Responsive ===== */
+@media (max-width: 600px) {
+  .hero h1 { font-size: 1.6rem; }
+  .hero-img { width: 130px; }
+  .cards { grid-template-columns: 1fr; }
+  .site-nav { gap: 12px; }
+}

@@ -6,8 +6,8 @@
 
 ## 1. Thông tin sinh viên
 
-- **Họ và tên đầy đủ:** →
-- **Mã số sinh viên:** →
+- **Họ và tên đầy đủ:** Trương Khắc Nhật Phi
+- **Mã số sinh viên:** 24110120
 - **Tên môn học (đúng như trên LMS):** Introduction to Cloud Computing
 - **Lớp / nhóm (nếu cần ghi):** →
 
@@ -16,16 +16,16 @@
 ## 2. Tài khoản và triển khai
 
 - **Phương án đã chọn:** B - GitHub Pages *(đã chọn trước đó, sửa nếu đổi)*
-- **Username GitHub:** →
-- **Đã có tài khoản GitHub chưa?** (Có / Chưa) →
-- **Repo `cloud-lab1` đã tạo chưa?** (Có / Chưa) →
-- **URL dự kiến:** `https://USERNAME.github.io/cloud-lab1/` *(thay USERNAME)*
+- **Username GitHub:** → nphi
+- **Đã có tài khoản GitHub chưa?** (Có / Chưa) → Có
+- **Repo `cloud-lab1` đã tạo chưa?** (Có / Chưa) → Rồi, tên là lab01_cloud
+- **URL:** `https://nphi.github.io/lab01_cloud/` *(thay USERNAME)*
 
 ---
 
 ## 3. Thư mục làm bài
 
-- **Thư mục đặt file website:** `D:\dev\UTE_projects\lab01_cloud\website\` →
+- **Thư mục đặt file website:** `D:\dev\UTE_projects\lab01_cloud` →
   *(Ghi đường dẫn khác nếu muốn. Để trống thì mặc định dùng thư mục trên.)*
 
 ---
@@ -37,13 +37,13 @@
 - **Tên các mục menu:** About | Cloud Computing | Cloud Services | Deployment *(giữ nguyên hoặc ghi lại)* →
 
 ### 4.1 Mục About Me
-- **Giới thiệu ngắn về bạn (2–3 câu, không bắt buộc):** →
+- **Giới thiệu ngắn về bạn (2–3 câu, không bắt buộc):** → Trương Khắc Nhật Phi-24110120, sinh viên khoa Đào tạo tiên tiến chuyên ngành Artificial Intelligence
 
 ### 4.2 Mục Cloud Computing (≥ 80 từ, tự viết)
 → *(Viết vào đây. Mình sẽ không sửa nội dung, chỉ chèn vào HTML và kiểm tra số từ.)*
 
 ### 4.3 Mục Cloud Services (IaaS, PaaS, SaaS)
-- **Ví dụ IaaS:** →
+- **Ví dụ IaaS:** → 
 - **Ví dụ PaaS:** →
 - **Ví dụ SaaS:** →
 - **Phần giải thích từng loại (nếu tự viết):** →
