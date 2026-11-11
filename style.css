@@ -1,12 +1,10 @@
-/* ===== Biến màu ===== */
+/* Phong cách: ghi chép / tạp chí. Nền giấy ấm, chữ serif, đường kẻ mảnh. */
 :root {
-  --primary: #2563eb;
-  --primary-dark: #1e3a8a;
-  --text: #1f2937;
-  --muted: #6b7280;
-  --bg: #ffffff;
-  --bg-alt: #f0f7ff;
-  --border: #e5e7eb;
+  --paper: #f4efe6;
+  --ink: #1f1b16;
+  --ink-soft: #5c554b;
+  --rule: #cfc6b6;
+  --accent: #a4472a;
 }
 
 * { box-sizing: border-box; }
@@ -15,143 +13,195 @@ html { scroll-behavior: smooth; }
 
 body {
   margin: 0;
-  font-family: "Segoe UI", Roboto, Arial, sans-serif;
-  color: var(--text);
-  background: var(--bg);
-  line-height: 1.6;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 18px;
+  line-height: 1.7;
 }
 
-img { max-width: 100%; height: auto; display: block; }
-a { color: var(--primary); }
+a { color: var(--accent); }
 
-.container {
-  width: 100%;
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 0 16px;
-}
-
-/* ===== Header & menu ===== */
-.site-header {
-  background: var(--primary-dark);
-  color: #fff;
+/* ===== Navbar ngang ===== */
+.navbar {
   position: sticky;
   top: 0;
   z-index: 10;
+  background: var(--paper);
+  border-bottom: 1px solid var(--rule);
 }
 
-.header-inner {
+.navbar-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 14px 24px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  gap: 8px;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  gap: 10px 24px;
 }
 
-.brand {
-  color: #fff;
-  font-weight: 700;
+.masthead {
+  font-size: 1.15rem;
+  font-weight: bold;
+  color: var(--ink);
   text-decoration: none;
-  font-size: 1.1rem;
 }
 
-.site-nav {
+.index {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
+  gap: 6px 20px;
 }
 
-.site-nav a {
-  color: #dbeafe;
+.index a {
+  color: var(--ink);
   text-decoration: none;
   font-size: 0.95rem;
 }
 
-.site-nav a:hover,
-.site-nav a:focus {
-  color: #fff;
-  text-decoration: underline;
+.index a span {
+  font-family: "Courier New", monospace;
+  font-size: 0.8rem;
+  color: var(--accent);
+  margin-right: 4px;
 }
 
-/* ===== Hero ===== */
-.hero {
-  background: linear-gradient(180deg, #dbeafe 0%, var(--bg) 100%);
-  padding: 40px 0;
+.index a:hover,
+.index a:focus { color: var(--accent); }
+
+/* ===== Nội dung ===== */
+.content {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 56px 24px 40px;
 }
 
-.hero-inner {
+.intro {
+  border-bottom: 3px double var(--ink);
+  padding-bottom: 28px;
+  margin-bottom: 8px;
+}
+
+.kicker {
+  font-family: "Courier New", monospace;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 0 0 12px;
+}
+
+.intro h1 {
+  font-size: 2.6rem;
+  line-height: 1.15;
+  margin: 0 0 20px;
+  font-weight: normal;
+}
+
+.intro-art {
+  width: 140px;
+  height: auto;
+}
+
+.entry {
+  padding: 36px 0;
+  border-bottom: 1px solid var(--rule);
+  scroll-margin-top: 80px;
+}
+
+.entry h2 {
+  font-size: 1.6rem;
+  font-weight: normal;
+  margin: 0 0 16px;
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 24px;
+  align-items: baseline;
+  gap: 14px;
 }
 
-.hero-img {
-  width: 180px;
-  flex-shrink: 0;
+.num {
+  font-family: "Courier New", monospace;
+  font-size: 0.9rem;
+  color: var(--accent);
 }
 
-.hero h1 {
-  margin: 0 0 8px;
-  color: var(--primary-dark);
-  font-size: 2rem;
-}
+.entry p { margin: 0 0 14px; max-width: 62ch; }
 
-.student-info { margin: 4px 0; font-weight: 600; }
-.course { margin: 4px 0; color: var(--muted); }
+/* ===== Cloud Services: danh sách định nghĩa ===== */
+.services { margin: 0; }
 
-/* ===== Section ===== */
-.section { padding: 40px 0; }
-.section-alt { background: var(--bg-alt); }
-
-.section h2 {
-  color: var(--primary-dark);
-  border-bottom: 3px solid var(--primary);
-  display: inline-block;
-  padding-bottom: 4px;
-  margin-top: 0;
-}
-
-/* ===== Cards ===== */
-.cards {
+.services > div {
+  padding: 16px 0;
+  border-top: 1px solid var(--rule);
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(440px, 1fr));
+  grid-template-columns: 200px 1fr;
   gap: 16px;
-  margin-top: 16px;
 }
 
-.card {
-  background: var(--bg);
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  padding: 20px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+.services > div:last-child { border-bottom: 1px solid var(--rule); }
+
+.services dt {
+  font-weight: bold;
+  font-size: 1.15rem;
 }
 
-.card h3 { margin-top: 0; color: var(--primary); }
-.example { color: var(--muted); margin-bottom: 0; }
+.services dt small {
+  display: block;
+  font-weight: normal;
+  font-size: 0.8rem;
+  color: var(--ink-soft);
+  font-family: "Courier New", monospace;
+}
+
+.services dd { margin: 0; max-width: 60ch; }
+
+.example {
+  font-family: "Courier New", monospace;
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+}
 
 /* ===== Deployment ===== */
-.info-list { padding-left: 20px; }
-.info-list li { margin-bottom: 8px; }
-
-/* ===== Footer ===== */
-.site-footer {
-  background: var(--primary-dark);
-  color: #dbeafe;
-  padding: 20px 0;
-  text-align: center;
-  font-size: 0.9rem;
+.facts {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 10px 16px;
+  margin: 0;
 }
 
-.site-footer p { margin: 0; }
+.facts dt {
+  font-family: "Courier New", monospace;
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+  padding-top: 4px;
+}
+
+.facts dd { margin: 0; }
+
+/* ===== Chân trang ===== */
+.colophon {
+  padding-top: 24px;
+  font-family: "Courier New", monospace;
+  font-size: 0.8rem;
+  color: var(--ink-soft);
+}
+
+.colophon p { margin: 0; }
 
 /* ===== Responsive ===== */
-@media (max-width: 600px) {
-  .hero h1 { font-size: 1.6rem; }
-  .hero-img { width: 130px; }
-  .cards { grid-template-columns: 1fr; }
-  .site-nav { gap: 12px; }
+@media (max-width: 760px) {
+  .navbar-inner { padding: 12px 16px; }
+  .masthead { font-size: 1.05rem; }
+  .index { gap: 6px 14px; }
+  .index a { font-size: 0.88rem; }
+
+  .content { padding: 32px 16px 24px; }
+
+  .intro h1 { font-size: 2rem; }
+  .intro-art { width: 100px; }
+
+  .services > div { grid-template-columns: 1fr; gap: 6px; }
+  .facts { grid-template-columns: 1fr; gap: 4px; }
+  .facts dt { padding-top: 10px; }
 }

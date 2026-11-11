@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,87 +8,72 @@
 </head>
 <body>
 
-  <header class="site-header">
-    <div class="container header-inner">
-      <a href="#top" class="brand">My First Cloud Website</a>
-      <nav class="site-nav" aria-label="Menu chính">
-        <a href="#about">About</a>
-        <a href="#cloud-computing">Cloud Computing</a>
-        <a href="#cloud-services">Cloud Services</a>
-        <a href="#deployment">Deployment</a>
+  <header class="navbar">
+    <div class="navbar-inner">
+      <a href="#top" class="masthead">My First Cloud Website</a>
+      <nav class="index" aria-label="Main navigation">
+        <a href="#about"><span>01</span> About Me</a>
+        <a href="#cloud-computing"><span>02</span> Cloud Computing</a>
+        <a href="#cloud-services"><span>03</span> Cloud Services</a>
+        <a href="#deployment"><span>04</span> Deployment</a>
       </nav>
     </div>
   </header>
 
-  <main id="top">
+  <main id="top" class="content">
 
-    <section class="hero">
-      <div class="container hero-inner">
-        <img src="assets/cloud.svg" alt="Minh họa đám mây" class="hero-img">
+    <header class="intro">
+      <p class="kicker">Introduction to Cloud Computing · Lab 01</p>
+      <h1>My First Cloud Website</h1>
+      <img src="assets/cloud.svg" alt="Line drawing of a cloud" class="intro-art">
+    </header>
+
+    <section id="about" class="entry">
+      <h2><span class="num">01</span>About Me</h2>
+      <p>Hello, I am <strong>Truong Khac Nhat Phi</strong> (Student ID: 24110120). I am a student in the Advanced Education Program, majoring in Artificial Intelligence.</p>
+    </section>
+
+    <section id="cloud-computing" class="entry">
+      <h2><span class="num">02</span>Cloud Computing</h2>
+      <p>Cloud computing is the on-demand delivery of computing services, such as servers, storage, databases, networking, software, and analytics, over the Internet. Instead of directly purchasing, installing, and operating expensive physical hardware or on-premises data centers, individuals and organizations can flexibly rent resources from major cloud providers such as AWS, Microsoft Azure, or Google Cloud.</p>
+      <p>This model works on a pay-as-you-go basis, so you pay only for what you actually use. It makes it easy for systems to scale up or down as demand changes, increases availability, reduces the cost of infrastructure investment, and lets applications reach users around the world quickly.</p>
+    </section>
+
+    <section id="cloud-services" class="entry">
+      <h2><span class="num">03</span>Cloud Services</h2>
+      <dl class="services">
         <div>
-          <h1>My First Cloud Website</h1>
-          <p class="student-info">Trương Khắc Nhật Phi · MSSV: 24110120</p>
-          <p class="course">Introduction to Cloud Computing · Lab 01</p>
+          <dt>IaaS <small>Infrastructure as a Service</small></dt>
+          <dd>Provides virtual infrastructure such as servers, networking, and storage. Users manage the operating system and their own applications.<br><span class="example">Example: AWS EC2</span></dd>
         </div>
-      </div>
-    </section>
-
-    <section id="about" class="section">
-      <div class="container">
-        <h2>About Me</h2>
-        <p>Xin chào, tôi là <strong>Trương Khắc Nhật Phi</strong> (MSSV: 24110120). Tôi là sinh viên khoa Đào tạo tiên tiến, chuyên ngành Artificial Intelligence.</p>
-      </div>
-    </section>
-
-    <section id="cloud-computing" class="section section-alt">
-      <div class="container">
-        <h2>Cloud Computing</h2>
-        <p>Điện toán đám mây là việc cung cấp theo yêu cầu các dịch vụ điện toán—chẳng hạn như máy chủ, dung lượng lưu trữ, cơ sở dữ liệu, mạng, phần mềm và phân tích—thông qua mạng Internet. Thay vì phải trực tiếp mua sắm, cài đặt và vận hành phần cứng vật lý hay các trung tâm dữ liệu cục bộ tốn kém, các cá nhân và tổ chức có thể linh hoạt thuê tài nguyên từ những nhà cung cấp dịch vụ đám mây lớn như AWS, Microsoft Azure hay Google Cloud.</p>
-        <p>Mô hình này vận hành theo cơ chế chi trả theo mức sử dụng thực tế (pay-as-you-go), giúp các hệ thống dễ dàng mở rộng quy mô khi nhu cầu thay đổi, tăng tính sẵn sàng cao, tối ưu chi phí đầu tư hạ tầng và triển khai ứng dụng ra toàn cầu nhanh chóng.</p>
-      </div>
-    </section>
-
-    <section id="cloud-services" class="section">
-      <div class="container">
-        <h2>Cloud Services</h2>
-        <div class="cards">
-          <article class="card">
-            <h3>IaaS</h3>
-            <p>Infrastructure as a Service: cung cấp hạ tầng ảo như máy chủ, mạng và lưu trữ; người dùng tự quản lý hệ điều hành và ứng dụng.</p>
-            <p class="example"><strong>Ví dụ:</strong> AWS EC2</p>
-          </article>
-          <article class="card">
-            <h3>PaaS</h3>
-            <p>Platform as a Service: cung cấp nền tảng để phát triển và chạy ứng dụng; nhà cung cấp quản lý hạ tầng và runtime.</p>
-            <p class="example"><strong>Ví dụ:</strong> Heroku</p>
-          </article>
-          <article class="card">
-            <h3>SaaS</h3>
-            <p>Software as a Service: phần mềm hoàn chỉnh chạy trên trình duyệt, người dùng chỉ sử dụng mà không cần cài đặt hay bảo trì.</p>
-            <p class="example"><strong>Ví dụ:</strong> Gmail</p>
-          </article>
+        <div>
+          <dt>PaaS <small>Platform as a Service</small></dt>
+          <dd>Provides a platform for developing and running applications. The provider manages the underlying infrastructure and runtime.<br><span class="example">Example: Heroku</span></dd>
         </div>
-      </div>
+        <div>
+          <dt>SaaS <small>Software as a Service</small></dt>
+          <dd>Complete software accessed through a web browser. Users just use it, without installing or maintaining anything.<br><span class="example">Example: Gmail</span></dd>
+        </div>
+      </dl>
     </section>
 
-    <section id="deployment" class="section section-alt">
-      <div class="container">
-        <h2>Deployment Information</h2>
-        <ul class="info-list">
-          <li><strong>Nền tảng:</strong> GitHub Pages</li>
-          <li><strong>Lý do chọn:</strong> Miễn phí, không cần thẻ thanh toán, hỗ trợ HTTPS sẵn và deploy trực tiếp từ repository.</li>
-          <li><strong>Địa chỉ website:</strong> <a href="https://truongkhacnhatphi.github.io/cloud-lab1/">https://truongkhacnhatphi.github.io/cloud-lab1/</a></li>
-        </ul>
-      </div>
+    <section id="deployment" class="entry">
+      <h2><span class="num">04</span>Deployment Information</h2>
+      <dl class="facts">
+        <dt>Platform</dt>
+        <dd>GitHub Pages</dd>
+        <dt>Reason</dt>
+        <dd>Free, requires no payment card, provides HTTPS by default, and deploys directly from a repository.</dd>
+        <dt>URL</dt>
+        <dd><a href="https://truongkhacnhatphi.github.io/cloud-lab1/">truongkhacnhatphi.github.io/cloud-lab1</a></dd>
+      </dl>
     </section>
+
+    <footer class="colophon">
+      <p>Truong Khac Nhat Phi · 24110120 · Introduction to Cloud Computing · Lab 01</p>
+    </footer>
 
   </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <p>Trương Khắc Nhật Phi · 24110120 · Introduction to Cloud Computing · Lab 01</p>
-    </div>
-  </footer>
 
 </body>
 </html>
